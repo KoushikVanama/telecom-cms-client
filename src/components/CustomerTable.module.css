@@ -1,0 +1,29 @@
+.heading {
+    display: flex;
+    justify-content: center;
+}
+.customer_table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+.customer_table th,
+.customer_table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.customer_table th {
+    background-color: #f2f2f2;
+    text-align: left;
+}
+
+.customer_table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.customer_table tbody tr:hover {
+    background-color: #ddd;
+}
