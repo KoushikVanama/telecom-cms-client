@@ -4,6 +4,7 @@ import axios from 'axios';
 
 import styles from './CustomerRegistrationForm.module.css';
 import CustomerTable from './CustomerTable';
+import PlanSelectionForm from './PlanSelectionForm';
 
 const CustomerRegistrationForm = () => {
     const initialValues = {
@@ -88,7 +89,7 @@ const CustomerRegistrationForm = () => {
                                 <Field type="text" name="mobile" />
                                 <ErrorMessage name="mobile" component="div" className={styles.error} />
                             </div>
-                            <button type="submit" disabled={isSubmitting}>
+                            <button type="submit" disabled={isSubmitting} className={styles.submit}>
                                 {isSubmitting ? "Submitting..." : "Submit"}
                             </button>
                         </Form>
@@ -96,6 +97,7 @@ const CustomerRegistrationForm = () => {
                 </Formik>
             </div>
             <CustomerTable />
+            <PlanSelectionForm />
         </>
     );
 }
