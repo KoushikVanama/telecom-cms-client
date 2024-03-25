@@ -5,6 +5,7 @@ import axios from 'axios';
 import styles from './CustomerRegistrationForm.module.css';
 import CustomerTable from './CustomerTable';
 import PlanSelectionForm from './PlanSelectionForm';
+import RenewPlan from './RenewPlanForm';
 
 const CustomerRegistrationForm = () => {
     const initialValues = {
@@ -98,6 +99,7 @@ const CustomerRegistrationForm = () => {
             </div>
             <CustomerTable />
             <PlanSelectionForm />
+            <RenewPlan />
         </>
     );
 }
